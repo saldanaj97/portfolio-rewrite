@@ -1,0 +1,26 @@
+{
+  "extends": ["next", "prettier"],
+  "plugins": ["perfectionist", "unused-imports", "simple-import-sort"],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "caughtErrors": "none",
+        "ignoreRestSiblings": true,
+        "vars": "all"
+      }
+    ],
+    "perfectionist/sort-objects": [
+      "error",
+      {
+        "order": "asc",
+        "type": "natural"
+      }
+    ],
+    "prefer-const": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "simple-import-sort/imports": ["error"],
+    "unused-imports/no-unused-imports": "error"
+  }
+}
